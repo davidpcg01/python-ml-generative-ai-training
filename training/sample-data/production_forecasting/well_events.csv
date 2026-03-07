@@ -1,0 +1,31 @@
+well_id,event_date,event_type,event_cost_usd,event_notes
+WELL_01,2023-10-01,acid_job,154372,Acid stimulation performed to improve near-wellbore productivity.
+WELL_02,2025-06-01,pump_change,53743,Pump replacement after unstable runtime and elevated downtime.
+WELL_03,2025-02-01,workover,135666,Workover completed to restore productivity and address mechanical constraints.
+WELL_04,2023-08-01,scale_cleanup,163704,Scale cleanup completed to improve flow efficiency.
+WELL_04,2024-06-01,shut_in,170024,Temporary shut-in due to facility constraints and wellsite work.
+WELL_04,2025-01-01,pump_change,55029,Pump replacement after unstable runtime and elevated downtime.
+WELL_05,2024-11-01,shut_in,114174,Temporary shut-in due to facility constraints and wellsite work.
+WELL_05,2025-06-01,pump_change,101939,Pump replacement after unstable runtime and elevated downtime.
+WELL_05,2025-10-01,scale_cleanup,66460,Scale cleanup completed to improve flow efficiency.
+WELL_06,2023-06-01,shut_in,156225,Temporary shut-in due to facility constraints and wellsite work.
+WELL_06,2025-05-01,workover,158085,Workover completed to restore productivity and address mechanical constraints.
+WELL_07,2025-09-01,shut_in,158080,Temporary shut-in due to facility constraints and wellsite work.
+WELL_08,2023-10-01,workover,166394,Workover completed to restore productivity and address mechanical constraints.
+WELL_08,2023-12-01,acid_job,25149,Acid stimulation performed to improve near-wellbore productivity.
+WELL_08,2024-05-01,acid_job,109975,Acid stimulation performed to improve near-wellbore productivity.
+WELL_09,2023-06-01,shut_in,105612,Temporary shut-in due to facility constraints and wellsite work.
+WELL_09,2023-09-01,workover,40184,Workover completed to restore productivity and address mechanical constraints.
+WELL_10,2025-10-01,acid_job,45645,Acid stimulation performed to improve near-wellbore productivity.
+WELL_11,2025-05-01,scale_cleanup,43143,Scale cleanup completed to improve flow efficiency.
+WELL_12,2023-10-01,scale_cleanup,169127,Scale cleanup completed to improve flow efficiency.
+WELL_12,2025-03-01,workover,94483,Workover completed to restore productivity and address mechanical constraints.
+WELL_12,2025-06-01,acid_job,135923,Acid stimulation performed to improve near-wellbore productivity.
+WELL_13,2024-11-01,workover,106714,Workover completed to restore productivity and address mechanical constraints.
+WELL_14,2025-02-01,shut_in,139845,Temporary shut-in due to facility constraints and wellsite work.
+WELL_14,2025-03-01,acid_job,143354,Acid stimulation performed to improve near-wellbore productivity.
+WELL_15,2024-01-01,workover,41784,Workover completed to restore productivity and address mechanical constraints.
+WELL_16,2023-06-01,acid_job,85323,Acid stimulation performed to improve near-wellbore productivity.
+WELL_16,2024-12-01,acid_job,82728,Acid stimulation performed to improve near-wellbore productivity.
+WELL_17,2023-08-01,pump_change,85015,Pump replacement after unstable runtime and elevated downtime.
+WELL_18,2025-10-01,pump_change,111619,Pump replacement after unstable runtime and elevated downtime.
