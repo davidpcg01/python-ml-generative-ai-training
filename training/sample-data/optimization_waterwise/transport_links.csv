@@ -1,0 +1,16 @@
+source,pad,max_capacity_bbl,transport_cost_per_bbl
+Produced_A,Pad_A,25000,0.25
+Produced_A,Pad_B,12000,0.55
+Produced_A,Pad_C,8000,0.75
+Produced_B,Pad_A,7000,0.6
+Produced_B,Pad_B,22000,0.25
+Produced_B,Pad_C,9000,0.45
+Produced_C,Pad_A,4000,0.85
+Produced_C,Pad_B,8000,0.55
+Produced_C,Pad_C,17000,0.2
+Brackish_A,Pad_A,12000,0.7
+Brackish_A,Pad_B,12000,0.65
+Brackish_A,Pad_C,12000,0.9
+Freshwater_Backup,Pad_A,10000,1.1
+Freshwater_Backup,Pad_B,10000,1.15
+Freshwater_Backup,Pad_C,10000,1.05

@@ -1,0 +1,3 @@
+parameter,value,description
+freshwater_cap_bbl,10000,Maximum freshwater that can be used across all pads
+min_produced_water_reuse_bbl,55000,Minimum produced water reuse target across the system

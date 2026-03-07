@@ -1,0 +1,4 @@
+pad,demand_bbl,shortage_penalty_per_bbl
+Pad_A,30000,6.0
+Pad_B,34000,6.0
+Pad_C,26000,6.0

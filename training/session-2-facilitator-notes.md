@@ -24,7 +24,20 @@ This session should feel like the exciting payoff. Participants should leave wit
 Opening line:
 “Today we go fully into generative AI: how these systems work, what they can do in technical energy settings, and what modern tools make possible.”
 
-### Slide 2: Quick Recap From Session 1
+### Slide 2: About The Presenter
+Keep this short and confident.
+
+Suggested phrasing:
+“My background is unusual in a useful way for this topic. I have worked in petroleum engineering, production forecasting, optimization, and technical software building, and I now work in data science and AI. So this session is really about what these tools mean in real technical workflows, not just in theory.”
+
+If helpful, mention:
+- `WaterWise`
+- `SandWise`
+- `FracGenie`
+- `Sequestrix`
+- SPE Journal work on CO2 transportation network optimization
+
+### Slide 3: Quick Recap From Session 1
 Use this as a mental reset:
 - ML predicts and optimizes
 - GenAI works with language, context, code, and workflow assembly
@@ -33,7 +46,7 @@ Use this as a mental reset:
 Suggested bridge:
 “Session 1 showed a production forecasting copilot. Session 2 shows the broader ecosystem around that idea.”
 
-### Slide 3: What An LLM Actually Is
+### Slide 4: What An LLM Actually Is
 Keep the explanation simple and calm.
 
 Suggested phrasing:
@@ -44,7 +57,7 @@ Important clarification:
 - it is not automatically grounded in your internal documents
 - it should not be treated as a source of truth
 
-### Slide 4: Important Concepts In Plain English
+### Slide 5: Important Concepts In Plain English
 Define each term with one sentence:
 - tokens: small chunks of text the model processes
 - context window: how much information it can hold in working memory
@@ -56,7 +69,7 @@ Define each term with one sentence:
 Tip:
 - avoid going deep into transformer mechanics unless asked
 
-### Slide 5: High-Value GenAI Use Cases In Energy
+### Slide 6: High-Value GenAI Use Cases In Energy
 Keep this role-specific.
 
 Examples to mention:
@@ -66,7 +79,7 @@ Examples to mention:
 - carbon storage: draft screening summaries and compare candidate sites
 - technical analysis: generate Python or SQL and package workflows
 
-### Slide 6: Why Raw Chat Is Not Enough
+### Slide 7: Why Raw Chat Is Not Enough
 Strong line:
 “A generic chatbot can help you think, but it is usually not enough for technical work that needs evidence, access to specific data, or repeatable steps.”
 
@@ -76,7 +89,7 @@ Explain what is missing:
 - enterprise context
 - reproducibility
 
-### Slide 7: RAG In One Picture
+### Slide 8: RAG In One Picture
 Teach this as a workflow, not a buzzword.
 
 Suggested phrasing:
@@ -86,7 +99,7 @@ Use the phrase:
 - `better than raw chat`
 - `still requires source quality and human review`
 
-### Slide 8: Chatbots For Technical Teams
+### Slide 9: Chatbots For Technical Teams
 Frame chatbots as interfaces, not magic.
 
 What a useful technical chatbot should do:
@@ -98,7 +111,7 @@ What a useful technical chatbot should do:
 Ask the room:
 - “If you had one internal technical chatbot tomorrow, what would you want it to know?”
 
-### Slide 9: Agents And Tool Use
+### Slide 10: Agents And Tool Use
 Suggested explanation:
 “An agent is useful when a task needs multiple steps. It might retrieve a document, pull a table, run a calculation, and then draft a result.”
 
@@ -106,7 +119,7 @@ Important nuance:
 - not every workflow needs an agent
 - simple workflows are often better than complex autonomous ones
 
-### Slide 10: MCP-Style Connectivity
+### Slide 11: MCP-Style Connectivity
 Keep it plain:
 “Think of MCP-style connectivity as structured plumbing between the model and useful tools.”
 
@@ -122,7 +135,7 @@ Energy examples:
 - connect to a calculation service
 - connect to a plotting or reporting tool
 
-### Slide 11: Modern Tooling Landscape
+### Slide 12: Modern Tooling Landscape
 Make the categories feel concrete.
 
 Suggested grouping:
@@ -131,7 +144,7 @@ Suggested grouping:
 - RAG apps for grounded answers over documents
 - agents for multi-step tool-connected workflows
 
-### Slide 12: Why These Tools Matter For Engineers And Geoscientists
+### Slide 13: Why These Tools Matter For Engineers And Geoscientists
 This slide is where you normalize tool use for non-software teams.
 
 Suggested phrasing:
@@ -143,7 +156,7 @@ Examples:
 - a well-ranking dashboard
 - a document comparison helper
 
-### Slide 13: Revisit The Production Forecasting Copilot
+### Slide 14: Revisit The Production Forecasting Copilot
 Bring the audience back to a familiar anchor.
 
 Message:
@@ -153,7 +166,7 @@ Message:
   - a retrieval-based assistant
   - a tool-connected agent with approvals
 
-### Slide 14: Example Agentic Energy Workflow
+### Slide 15: Example Agentic Energy Workflow
 Use a realistic example:
 - the user asks which wells may miss plan next quarter
 - the system retrieves production data and notes
@@ -163,7 +176,7 @@ Use a realistic example:
 Important teaching line:
 “The agent is not valuable because it is autonomous. It is valuable because it can connect useful steps in a traceable way.”
 
-### Slide 15: Hands-On Lab
+### Slide 16: Hands-On Lab
 Recommended live structure:
 1. show a weak prompt
 2. show a structured prompt
@@ -173,7 +186,7 @@ Recommended live structure:
 If time is short:
 - focus on one good prompt engineering example plus one architecture sketch
 
-### Slide 16: Guardrails And Governance
+### Slide 17: Guardrails And Governance
 Be direct here. Technical audiences usually appreciate candor.
 
 Key points:
@@ -183,7 +196,7 @@ Key points:
 - keep a human accountable for decisions
 - use narrow pilots before wider deployment
 
-### Slide 17: Practical Adoption Roadmap
+### Slide 18: Practical Adoption Roadmap
 Suggested phrasing:
 “Do not start with the most autonomous, complex idea. Start where the value is obvious and the risk is manageable.”
 
@@ -193,7 +206,7 @@ Recommended path:
 3. reusable internal helpers
 4. tool-connected agents in narrow workflows
 
-### Slide 18: Close
+### Slide 19: Close
 Closing script:
 “GenAI is not just a writing tool. In the right setup, it becomes a technical copilot, a workflow builder, and a front end to useful tools and data. The domain expertise in this room is what makes it valuable.”
 

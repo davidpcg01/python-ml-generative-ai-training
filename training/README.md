@@ -32,7 +32,7 @@ The training follows a deliberate progression:
 3. Session 2 focuses fully on GenAI, LLMs, RAG, agents, AI coding copilots, and MCP-style tool connectivity.
 
 ## Session Timing
-Each session runs for `60 minutes`.
+Each session now runs for `120 minutes`.
 
 ### Session 1
 Theme: `ML foundations plus a strong GenAI bridge`
@@ -93,6 +93,14 @@ This storyline should be referenced in both sessions:
 - Session 1: GenAI-assisted production forecasting workflow
 - Session 2: how the same workflow can evolve into a chatbot, tool-using agent, or internal app
 
+## Additional Hands-On Optimization Demo
+Because the sessions are now longer, the package also includes a simple optimization case study inspired by completions water management.
+
+Why this matters:
+- it gives petroleum engineers a concrete prescriptive-analytics example
+- it shows how linear optimization differs from ML
+- it provides a practical bridge into larger optimization products such as `WaterWise`, `SandWise`, `FracGenie`, and `Sequestrix`
+
 ## Delivery Stack
 Recommended live delivery stack:
 - Slides in Markdown or converted to PowerPoint/Google Slides
@@ -108,7 +116,11 @@ Recommended live delivery stack:
 - `training/hands-on/notebook-ml-basics.ipynb`
 - `training/hands-on/notebook-genai-rag.ipynb`
 - `training/hands-on/production-forecasting-demo.md`
+- `training/hands-on/notebook-optimization-waterwise.ipynb`
+- `training/hands-on/optimization-waterwise-demo.py`
+- `training/hands-on/optimization-waterwise-demo.md`
 - `training/sample-data/production_forecasting/`
+- `training/sample-data/optimization_waterwise/`
 - `training/participant-workbook.md`
 - `training/reading-list.md`
 
@@ -124,7 +136,7 @@ Recommended live delivery stack:
 
 ## Practical Setup
 Minimum setup for the facilitator:
-- Python environment with `pandas`, `numpy`, `matplotlib`, `seaborn`, and `scikit-learn`
+- Python environment with `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, and `pulp`
 - Internet access for live LLM demos, if allowed
 - Backup screenshots in case live prompting is unreliable
 

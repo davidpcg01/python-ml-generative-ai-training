@@ -1,0 +1,4 @@
+pad,demand_bbl,delivered_bbl,shortage_bbl,fulfillment_pct
+Pad_A,30000,30000.0,0.0,100.0
+Pad_B,34000,34000.0,0.0,100.0
+Pad_C,26000,26000.0,0.0,100.0

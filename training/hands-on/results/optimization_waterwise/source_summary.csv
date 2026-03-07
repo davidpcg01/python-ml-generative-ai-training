@@ -1,0 +1,5 @@
+source,source_type,allocated_bbl
+Brackish_A,brackish,4000.0
+Produced_A,produced_water,40000.0
+Produced_B,produced_water,28000.0
+Produced_C,produced_water,18000.0

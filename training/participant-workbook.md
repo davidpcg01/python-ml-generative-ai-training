@@ -24,7 +24,20 @@ For each task below, decide whether it is mostly an `ML` problem, a `GenAI` prob
 - Draft a technical summary after a production review
 - Build a repeatable notebook that forecasts wells and explains the results
 
-### Part C: Production Forecasting Copilot Reflection
+### Part C: Optimization Check
+For each task below, ask whether optimization could help and what would be:
+- the `decision variable`
+- the `objective`
+- one key `constraint`
+
+Tasks:
+- prioritize wells for intervention
+- allocate limited water supply across completions operations
+- choose the best sand delivery plan under logistics constraints
+- decide where to tie in CO2 transport infrastructure
+- schedule operations under time, budget, or equipment limits
+
+### Part D: Production Forecasting Copilot Reflection
 After the Session 1 demo, answer:
 
 1. What part of the workflow was handled by the ML model?
@@ -52,6 +65,18 @@ Open `training/hands-on/notebook-ml-basics.ipynb` and work through:
 - training the simple model
 - reviewing the plots
 - identifying wells that deserve surveillance
+
+### Option 3: Optimization Framing Exercise
+Choose one workflow from your job and write it in optimization form:
+- `decision`: what are you trying to choose or allocate?
+- `objective`: what are you maximizing or minimizing?
+- `constraints`: what limits must be respected?
+
+Good starting examples:
+- surveillance prioritization
+- routing or logistics
+- scheduling
+- source-sink matching
 
 ## Between-Session Practice
 Suggested total time: `20 to 40 minutes`

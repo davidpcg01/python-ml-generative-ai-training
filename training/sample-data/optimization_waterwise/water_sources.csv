@@ -1,0 +1,6 @@
+source,source_type,supply_bbl,source_cost_per_bbl
+Produced_A,produced_water,40000,0.35
+Produced_B,produced_water,28000,0.4
+Produced_C,produced_water,18000,0.45
+Brackish_A,brackish,26000,0.85
+Freshwater_Backup,freshwater,22000,1.8
