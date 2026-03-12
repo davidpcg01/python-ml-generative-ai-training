@@ -1,7 +1,7 @@
 # Production Forecasting Data Dictionary
 
 ## Dataset Overview
-This training subset uses official monthly production records for `3` offshore Gulf of Mexico completions from `BSEE OGOR-A`.
+This subset uses official monthly production records for `3` offshore Gulf of Mexico completions from `BSEE OGOR-A`.
 
 Selected completions:
 - `G21245 PN002`
@@ -19,7 +19,7 @@ Each completion includes `48` monthly records:
 - `6` months for internal test comparison
 - `12` months reserved as the forward forecast window
 
-This supports a cleaner classroom comparison between:
+This supports a clean comparison between:
 - `Arps hyperbolic decline`
 - `RandomForestRegressor` trained separately for each completion with multivariate production-state features
 - `Exponential Smoothing`
@@ -32,8 +32,8 @@ One row per `well_id` per month.
 - `well_id`: completion label used in the demo
 - `api_uwi`: offshore API / UWI identifier from the BSEE source
 - `operator`: operator name
-- `county`: broad location label used for the classroom subset
-- `reservoir`: field code used as the reservoir-style label in the training files
+- `county`: broad location label used for the subset
+- `reservoir`: field code used as the reservoir-style label in the repo files
 - `state`: `OCS` for Outer Continental Shelf
 - `basin`: basin name
 - `area_block`: offshore area and block code from BSEE
@@ -59,7 +59,7 @@ One row per demo completion.
 - `api_uwi`: offshore API / UWI identifier
 - `operator`: operator name
 - `county`: broad location label
-- `reservoir`: field code used as a compact teaching label
+- `reservoir`: field code used as a compact label
 - `state`: `OCS`
 - `basin`: basin name
 - `area_block`: offshore area and block code
@@ -71,9 +71,9 @@ One row per demo completion.
 - `source_dataset`: short provenance label
 
 ## Usage Notes
-- This is a `teaching subset`, not the full upstream BSEE database.
+- This is a compact subset, not the full upstream BSEE database.
 - The notebook uses a `36-month` modeling window per completion, split into `30` training months and `6` internal test months.
-- The `12-month forecast` is evaluated against known future months in the selected classroom window.
+- The `12-month forecast` is evaluated against known future months in the selected analysis window.
 - The notebook compares `Arps`, a multivariate `RandomForestRegressor`, `Exponential Smoothing`, and `ARIMA`.
 - The notebook trains each model separately for each completion rather than pooling the completions together.
 - `oil_bbl`, `gas_mcf`, and `water_bbl` are monthly volumes. The plots in the notebook show daily rates derived from `days_on_prod`.

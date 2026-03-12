@@ -1,7 +1,7 @@
 # Production Forecasting Demo
 
 ## Purpose
-This is the featured Session 1 forecasting case. It is designed to show how a petroleum-engineering forecasting workflow can combine:
+This exercise shows how a petroleum-engineering forecasting workflow can combine:
 - a classical engineering method
 - a machine-learning benchmark
 - an AI copilot for code, interpretation, and workflow packaging
@@ -12,8 +12,8 @@ The forecasting engine in this demo is not the LLM. The forecasting engines are:
 - `Exponential Smoothing`
 - `ARIMA`
 
-## Teaching Objective
-Participants should see the difference between:
+## Learning Objective
+This exercise highlights the difference between:
 - `ML as the forecasting engine`
 - `GenAI as the engineering copilot around that engine`
 
@@ -24,7 +24,7 @@ Use a small official `BSEE OGOR-A` subset with `3` offshore producing completion
 - `G21245 PS002`
 
 For each completion, the demo uses:
-- a selected `48-month` classroom window
+- a selected `48-month` analysis window
 - `30 months` for model fitting
 - `6 months` for internal test comparison
 - `12 months` for forecast evaluation
@@ -37,7 +37,7 @@ The business question is:
 - It uses real monthly well histories rather than a synthetic example.
 - It uses official offshore regulator data rather than an unofficial sample export.
 - It compares a familiar petroleum-engineering method against both ML and pure time-series baselines.
-- It keeps the data small enough for class use.
+- It keeps the data small enough to run and review quickly.
 - It creates a clean bridge into AI-assisted code generation, interpretation, and dashboarding.
 
 ## Files Used In This Demo
@@ -51,18 +51,18 @@ The business question is:
 - `training/sample-data/production_forecasting/data_dictionary.md`
 - `training/sample-data/production_forecasting/source_notes.md`
 
-## Recommended Live Demo Flow
-1. Introduce the problem in petroleum-engineering language.
-2. Show the source notes and explain the dataset provenance clearly.
-3. Show the monthly production table and the well master file.
-4. Explain the split:
+## Suggested Workflow
+1. Read the problem statement in petroleum-engineering terms.
+2. Review the source notes and dataset provenance.
+3. Review the monthly production table and the well master file.
+4. Review the split:
    - `30 months` train
    - `6 months` test
    - `12 months` forecast
 5. Fit `Arps hyperbolic decline`.
 6. Train the multivariate `RandomForestRegressor` and fit `Exponential Smoothing` plus `ARIMA`.
 7. Compare metrics and the train/test/forecast plots across all model families.
-8. Ask the LLM to explain results, improve presentation, or package the workflow.
+8. Use the LLM to explain results, improve presentation, or package the workflow.
 
 ## Analytical Structure
 ### Classical engineering baseline
@@ -96,7 +96,7 @@ Compare all model families using:
 - What would have to change before using this on internal field data?
 
 ## Bridge To Cursor And GenAI
-After the notebook run, use `Cursor` to show how AI can help:
+After the notebook run, use `Cursor` to explore how AI can help:
 - generate a standalone Python script for Arps forecasting
 - build a static HTML dashboard from the CSV outputs
 - analyze the forecast results and draft engineering recommendations
@@ -106,8 +106,8 @@ Use the prompt files in:
 `training/hands-on/cursor-prompts/`
 
 ## Practical Notes
-- This is a `teaching subset`, not a full field database.
+- This is a compact learning subset, not a full field database.
 - The selected window is structured so both methods can be compared on a short internal test period and a separate 12-month forecast period.
 - `oil_bbl` is stored as monthly volume, while the notebook plots `bbl/day on production` using `days_on_prod`.
 - The notebook is designed for `Colab`, `Jupyter`, or local use.
-- Keep repeating the core message: `the models do the forecasting; the LLM helps build and operationalize the workflow.`
+- The core message is: `the models do the forecasting; the LLM helps build and operationalize the workflow.`

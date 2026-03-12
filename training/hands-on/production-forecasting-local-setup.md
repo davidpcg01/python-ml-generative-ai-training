@@ -183,9 +183,9 @@ pip install scipy
 - Small differences can happen because of package-version changes.
 - The notebook sets `random_state=42` for the Random Forest to improve repeatability, while the statistical baselines may still differ slightly across package versions.
 
-## Suggested Local Demo Workflow
+## Suggested Local Workflow
 1. Open the notebook.
-2. Show the source notes and data dictionary.
+2. Review the source notes and data dictionary.
 3. Run the data preparation cells.
 4. Run `Arps hyperbolic` first.
 5. Run the multivariate `RandomForestRegressor` plus `Exponential Smoothing` and `ARIMA`.

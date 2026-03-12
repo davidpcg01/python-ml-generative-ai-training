@@ -41,8 +41,8 @@ Included parameters:
 - `freshwater_cap_bbl`: global cap on freshwater usage
 - `min_produced_water_reuse_bbl`: minimum produced water reuse target
 
-## Teaching Notes
+## Notes
 - This is a simplified linear programming case study.
-- It is intentionally small enough to solve live in a workshop.
+- It is intentionally small enough to solve quickly.
 - The structure is realistic even though the numbers are synthetic.
 - It is a good bridge into larger optimization problems such as `WaterWise`, `SandWise`, routing, scheduling, or CCS network design.

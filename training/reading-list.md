@@ -5,7 +5,7 @@ This list is intentionally practical. It is grouped into short, useful readings 
 
 Use the list in three ways:
 - read `before or between sessions` for orientation
-- use `during preparation` for demos and examples
+- use it during hands-on work for demos and examples
 - use `after the training` for deeper self-study
 
 ## Core ML Foundations
@@ -18,7 +18,7 @@ Use the list in three ways:
   Useful for simple definitions without heavy math.
 
 - [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
-  Helpful for participants who want to strengthen `pandas`, plotting, and workflow basics.
+  Helpful if you want to strengthen `pandas`, plotting, and workflow basics.
 
 ### Energy-relevant ML ideas
 - [Machine Learning of the Equinor Volve Production Data Set](https://sgk2004.github.io/Volve-Dataset/)
@@ -37,7 +37,7 @@ Use the list in three ways:
   A lightweight way to start building linear optimization models in Python.
 
 - [Pyomo Documentation](https://pyomo.readthedocs.io/en/stable/)
-  Useful once participants want a more structured modeling framework.
+  Useful once you want a more structured modeling framework.
 
 - [Gurobi Modeling Examples](https://gurobi.github.io/modeling-examples/)
   Helpful for understanding realistic linear and mixed-integer optimization patterns.
@@ -58,7 +58,7 @@ Use the list in three ways:
 - `Facilities and operations`: flow routing, storage utilization, transport and supply-chain decisions
 - `Carbon and CCS`: source-sink matching, pipeline routing, tie-in decisions, sequestration network economics
 
-### Presenter-linked examples
+### Example product themes
 - `WaterWise`: completions water network optimization
 - `SandWise`: proppant logistics optimization
 - `FracGenie`: stage-sequence optimization
@@ -141,11 +141,11 @@ Use the list in three ways:
 
 ### Carbon and infrastructure optimization
 - [Embedding Existing Pipelines in Design of CO2 Transportation Networks for Optimal Sequestration Economics](https://doi.org/10.2118/214917-PA)
-  Useful for participants interested in carbon, infrastructure reuse, and source-sink optimization.
+  Useful if you are interested in carbon, infrastructure reuse, and source-sink optimization.
 
-## Suggested Practice Reading Between Sessions
+## Suggested Practice Reading
 
-### Short list for all participants
+### Short list for all learners
 - one beginner-friendly ML overview
 - one beginner-friendly optimization overview
 - one prompt engineering guide
@@ -157,15 +157,9 @@ Use the list in three ways:
 - `Geoscience`: RAG concepts plus the well-log interpretation sample document
 - `Carbon`: the SPE sequestration optimization paper plus the carbon screening sample note
 
-## Recommended Internal Reading Prompts
-If participants want to learn by doing, ask them to read any technical note and answer:
+## Recommended Reading Prompts
+If you want to learn by doing, read any technical note and answer:
 - What questions could an LLM answer from this document?
 - What structured data could be extracted from it?
 - Would this use case need plain chat, RAG, or tool connectivity?
 - What human review would still be necessary?
-
-## Reading Strategy For The Facilitator
-- Do not overwhelm the audience with too much external reading.
-- Assign short, high-value pieces between sessions.
-- Prefer resources that help participants experiment quickly.
-- Use public datasets and examples whenever possible.

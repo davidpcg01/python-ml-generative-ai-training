@@ -1,9 +1,9 @@
 # Energy Industry AI Training
 
 ## Overview
-This training is a two-session, beginner-to-intermediate program for petroleum engineers and geoscientists. It is designed to move participants from core machine learning concepts into practical generative AI applications that are directly relevant to upstream oil and gas, subsurface workflows, and carbon storage.
+This package is a two-session, beginner-to-intermediate introduction to AI for petroleum engineers, geoscientists, and other technical energy professionals. It moves from core machine learning concepts into practical generative AI applications that are relevant to upstream oil and gas, subsurface workflows, and carbon storage.
 
-The tone of the training should be practical, role-aware, and confidence-building. The goal is not to make participants into data scientists in two hours. The goal is to help them understand what modern AI can do, where it fits in their work, how to use it responsibly, and how to begin experimenting on their own.
+The material is practical and role-aware. The goal is to help you understand what modern AI can do, where it fits in technical work, how to use it responsibly, and how to start experimenting on your own.
 
 ## Audience
 Primary audience:
@@ -14,22 +14,13 @@ Primary audience:
 Assumed starting point:
 - Comfortable with engineering decision-making and domain terminology
 - Limited or mixed exposure to ML and GenAI
-- Some participants may code lightly in Python, but many will not
-
-## Training Design Principles
-- Start with intuition before technical detail.
-- Use energy-specific examples, not generic retail or finance examples.
-- Explain each concept at three levels: `what it is`, `where it works`, `how to try it`.
-- Keep coding optional and lightweight.
-- Show both `what AI can do well` and `what needs engineering judgment`.
-- Make Session 1 useful on its own, while building momentum into Session 2.
+- Some learners may code lightly in Python, but many will not
 
 ## Learning Arc
-The training follows a deliberate progression:
-
-1. Session 1 introduces predictive ML and prescriptive thinking, then quickly pivots into richer GenAI use cases.
-2. Between sessions, participants try lightweight prompts and optional notebooks.
-3. Session 2 focuses fully on GenAI, LLMs, RAG, agents, AI coding copilots, and MCP-style tool connectivity.
+The material follows this progression:
+1. Session 1 introduces predictive ML and prescriptive thinking, then pivots into practical GenAI use cases.
+2. The hands-on notebooks and prompts let you try the ideas directly.
+3. Session 2 focuses on GenAI, LLMs, RAG, agents, AI coding copilots, and tool connectivity.
 
 ## Session Timing
 Each session now runs for `120 minutes`.
@@ -90,7 +81,7 @@ Why this works well:
 - It shows where `Arps hyperbolic decline`, a multivariate `RandomForestRegressor`, `Exponential Smoothing`, and `ARIMA` act as the numerical engines.
 - It also shows how GenAI can help frame the problem, write analysis code, inspect outputs, generate visuals, explain results, and package the workflow into something reusable.
 
-This storyline should be referenced in both sessions:
+This storyline appears in both sessions:
 - Session 1: GenAI-assisted production forecasting workflow
 - Session 2: how the same workflow can evolve into a chatbot, tool-using agent, or internal app
 
@@ -101,13 +92,6 @@ Why this matters:
 - it gives petroleum engineers a concrete prescriptive-analytics example
 - it shows how linear optimization differs from ML
 - it provides a practical bridge into larger optimization products such as `WaterWise`, `SandWise`, `FracGenie`, and `Sequestrix`
-
-## Delivery Stack
-Recommended live delivery stack:
-- Slides in Markdown or converted to PowerPoint/Google Slides
-- Jupyter or Colab notebooks for ML and GenAI demos
-- One LLM tool for prompting and workflow generation
-- Optional AI coding copilot demo in `Cursor`, `Claude Code`, or `Codex`
 
 ## Materials In This Package
 - `training/session-1-slides.md`
@@ -127,32 +111,23 @@ Recommended live delivery stack:
 - `training/sample-data/optimization_waterwise/`
 - `training/reading-list.md`
 
-## Suggested Delivery Style
-- Use analogies and role-specific examples.
-- Ask short reflection questions during transitions.
-- Keep formulas optional and secondary.
-- Treat the LLM as a practical technical copilot, not as magic.
-- Clearly separate:
-  - what the model predicts
-  - what the engineer decides
-  - what GenAI can automate or accelerate
+## How To Use This Package
+- Read the session slide files for the conceptual overview.
+- Use the notebooks and setup guides for hands-on practice.
+- Review the sample-data folders and data dictionaries before running the exercises.
+- Use the `Cursor` guide and prompt library if you want to try AI-assisted coding and analysis workflows.
+- Use the reading list for optional follow-up study.
 
 ## Practical Setup
-Minimum setup for the facilitator:
-- Python environment with `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `scipy`, `statsmodels`, and `pulp`
-- Internet access for live LLM demos, if allowed
-- Backup screenshots in case live prompting is unreliable
+- No coding is required to read the materials.
+- Optional access to `Colab` or `Jupyter` is helpful for the notebook exercises.
+- Optional access to the free version of `Cursor` is helpful for the AI-assisted coding exercises.
+- If you want to run everything locally, install the Python packages listed in `training/requirements.txt`.
 
-Minimum setup for participants:
-- No coding required for core participation
-- Optional access to Colab or Jupyter for self-study
-- Optional access to `Cursor` free version for AI-assisted coding exercises
-- Optional access to an LLM interface for prompting exercises
-
-## Success Criteria
-The training is successful if participants can:
-- name several high-value AI use cases in their discipline
+## What You Should Be Able To Do
+After working through the package, you should be able to:
+- name several high-value AI use cases in your discipline
 - explain the difference between ML, optimization, and GenAI
 - complete at least one small ML exercise and one GenAI exercise
 - describe where chatbots or agents would fit into a technical energy workflow
-- identify one workflow in their own job that is ready for experimentation
+- identify one workflow in your own job that is ready for experimentation

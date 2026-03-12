@@ -1,7 +1,7 @@
 # Optimization WaterWise Demo
 
 ## Purpose
-This is a simple, workshop-friendly optimization case study inspired by completions water management in upstream oil and gas. It is designed for a longer session where participants can see optimization framed as a practical engineering tool rather than abstract mathematics.
+This is a simple optimization case study inspired by completions water management in upstream oil and gas. It frames optimization as a practical engineering tool rather than abstract mathematics.
 
 ## Why This Case Works
 - It is easy to explain in operational language.
@@ -47,22 +47,22 @@ What is the lowest-cost feasible water-allocation plan that:
 - `training/hands-on/optimization-waterwise-demo.py`
 - `training/hands-on/notebook-optimization-waterwise.ipynb`
 
-## Teaching Objectives
-Participants should leave understanding:
+## Learning Objectives
+After working through this exercise, you should understand:
 - what `decision variables`, `objective`, and `constraints` mean
 - how a real engineering problem becomes a linear optimization model
 - why optimization is valuable in water, sand, logistics, scheduling, and carbon workflows
 
-## Suggested Live Demo Flow
-1. Explain the scenario in business language.
-2. Show the four CSVs and talk through the data structure.
+## Suggested Workflow
+1. Read the scenario in business language.
+2. Review the four CSVs and the data structure.
 3. Define the optimization problem:
    - decision variables
    - objective function
    - constraints
 4. Run the Python script or notebook.
 5. Review the optimal allocations and engineering interpretation.
-6. Ask what would change if:
+6. Explore what would change if:
    - freshwater cap became tighter
    - produced water reuse target increased
    - one route lost capacity
@@ -103,7 +103,5 @@ The script:
 - Add multiple time periods
 - Add integer decisions such as whether a route or facility is used
 
-## Good Bridge To Your Real Examples
-After the toy demo, say:
-
-“This is the simplified form of a much broader class of optimization problems. The same modeling language shows up in water logistics, sand supply, stage scheduling, and CO2 transport network design. The toy example is intentionally small so the structure is easy to see.”
+## Broader Context
+This toy example is the simplified form of a much broader class of optimization problems. The same modeling language shows up in water logistics, sand supply, stage scheduling, and CO2 transport network design. The example is intentionally small so the structure is easy to see.

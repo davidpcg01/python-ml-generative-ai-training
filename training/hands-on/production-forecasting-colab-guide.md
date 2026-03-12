@@ -104,7 +104,7 @@ To download from Colab:
 ## What The Notebook Is Doing
 The workflow is:
 1. Convert monthly production volumes into daily average production rates using `days_on_prod`.
-2. Keep the most recent `48` months per completion for the teaching window.
+2. Keep the most recent `48` months per completion for the analysis window.
 3. Split that window into `30` training months, `6` internal test months, and a `12` month forecast window.
 4. Fit `Arps hyperbolic decline` to each completion individually on the training segment.
 5. Train one multivariate `RandomForestRegressor` workflow per completion using oil, gas, and water production-state features.
@@ -127,12 +127,12 @@ The workflow is:
 ### If forecasts look strange
 - Check whether the selected test or forecast months include an abrupt change that is not well represented in the earlier history.
 - Review the rows in `holdout_forecasts.csv` and `prediction_timeline.csv`.
-- Remember that `Arps`, multivariate `Random Forest`, `Exponential Smoothing`, and `ARIMA` are being compared on a compact classroom window, not a full field-history matching exercise.
+- Remember that `Arps`, multivariate `Random Forest`, `Exponential Smoothing`, and `ARIMA` are being compared on a compact analysis window, not a full field-history matching exercise.
 - Remember that `oil_bbl` is monthly volume while the plots show daily rates based on `days_on_prod`.
 
-## Suggested Classroom Flow
-1. Show the data dictionary first.
-2. Explain the `30 month train -> 6 month test -> 12 month forecast` structure.
+## Suggested Workflow
+1. Review the data dictionary first.
+2. Review the `30 month train -> 6 month test -> 12 month forecast` structure.
 3. Run the `Arps` fit.
 4. Run the multivariate `Random Forest`, `Exponential Smoothing`, and `ARIMA` cells.
 5. Compare metrics and the train/test/forecast plots.

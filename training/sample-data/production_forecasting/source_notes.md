@@ -1,7 +1,7 @@
 # BSEE Source Notes
 
 ## Primary Source
-This classroom dataset is derived from the official `BSEE OGOR-A` monthly well-completion production files.
+This dataset is derived from the official `BSEE OGOR-A` monthly well-completion production files.
 
 Key source pages:
 - Raw data index: [https://www.data.bsee.gov/Main/RawData.aspx](https://www.data.bsee.gov/Main/RawData.aspx)
@@ -15,14 +15,14 @@ Direct raw files used for screening:
 - `https://www.data.bsee.gov/Production/Files/ogora2024delimit.zip`
 
 ## Why This Source Was Chosen
-This source works well for the training because it is:
+This source works well for this exercise because it is:
 - official regulator data rather than an unofficial classroom sample
 - reported monthly at the completion level
 - consistent enough to screen for continuous histories
 - suitable for deriving daily production rates using `days_on_prod`
 
 ## Training Subset Definition
-This repo includes a small, classroom-friendly subset rather than the full BSEE raw files.
+This repo includes a small, learner-friendly subset rather than the full BSEE raw files.
 
 Selected completions:
 - `G21245 PN002`
@@ -61,7 +61,7 @@ These references still anchor the modeling approach used in the notebook:
 - Forecasting: Principles and Practice, Exponential Smoothing chapter: [https://otexts.com/fpp3/expsmooth.html](https://otexts.com/fpp3/expsmooth.html)
 - Forecasting: Principles and Practice, ARIMA chapter: [https://otexts.com/fpp3/arima.html](https://otexts.com/fpp3/arima.html)
 
-## Notes For Training Use
-- The repo stores a cleaned monthly CSV subset so participants do not need to parse the raw regulator ZIP files during class.
+## Repository Notes
+- The repo stores a cleaned monthly CSV subset so you do not need to parse the raw regulator ZIP files directly.
 - The notebook compares `Arps`, a multivariate `RandomForestRegressor`, `Exponential Smoothing`, and `ARIMA` on the same `30/6/12` completion-level split.
 - The ML and time-series models are fit one completion at a time rather than pooling all completions into a single model.
