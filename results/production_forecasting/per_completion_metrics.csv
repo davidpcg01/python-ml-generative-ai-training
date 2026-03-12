@@ -1,0 +1,25 @@
+well_id,phase,model,MAE,RMSE,MAPE_pct
+G21245 PN002,forecast,Arps hyperbolic,302.8,400.283,5.433
+G21245 PN002,forecast,Random forest (multivariate),956.737,989.049,17.271
+G21245 PN002,forecast,Exponential smoothing,343.409,432.182,6.138
+G21245 PN002,forecast,ARIMA,703.518,746.942,12.764
+G21245 PN002,test,Arps hyperbolic,46.784,65.453,0.792
+G21245 PN002,test,Random forest (multivariate),615.354,653.001,10.32
+G21245 PN002,test,Exponential smoothing,36.218,46.952,0.614
+G21245 PN002,test,ARIMA,307.198,338.164,5.166
+G21245 PS001,forecast,Arps hyperbolic,253.683,319.362,5.361
+G21245 PS001,forecast,Random forest (multivariate),782.337,804.144,17.039
+G21245 PS001,forecast,Exponential smoothing,480.858,599.849,10.128
+G21245 PS001,forecast,ARIMA,649.32,676.204,14.172
+G21245 PS001,test,Arps hyperbolic,113.073,136.016,2.353
+G21245 PS001,test,Random forest (multivariate),562.524,585.641,11.567
+G21245 PS001,test,Exponential smoothing,64.72,65.851,1.32
+G21245 PS001,test,ARIMA,375.733,410.52,7.767
+G21245 PS002,forecast,Arps hyperbolic,406.088,555.384,5.027
+G21245 PS002,forecast,Random forest (multivariate),1228.216,1407.988,15.018
+G21245 PS002,forecast,Exponential smoothing,574.203,602.812,6.776
+G21245 PS002,forecast,ARIMA,1398.524,1513.345,16.952
+G21245 PS002,test,Arps hyperbolic,267.927,272.254,2.849
+G21245 PS002,test,Random forest (multivariate),521.45,579.736,5.576
+G21245 PS002,test,Exponential smoothing,353.983,362.96,3.774
+G21245 PS002,test,ARIMA,424.763,472.086,4.548

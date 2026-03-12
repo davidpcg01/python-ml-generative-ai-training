@@ -1,0 +1,6 @@
+training/*facilitator-notes*.md
+training/**/*facilitator-notes*.md
+training/*speaker-notes*.md
+training/**/*speaker-notes*.md
+training/*presenter-notes*.md
+training/**/*presenter-notes*.md

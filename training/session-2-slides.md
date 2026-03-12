@@ -164,9 +164,6 @@ Options:
 - simple RAG over small document set
 - AI copilot walkthrough that builds a small internal helper
 
-Facilitator note:
-- let participants see the difference between a weak prompt and a structured prompt
-
 ## Slide 17: Guardrails And Governance
 Critical points:
 - confidentiality and IP

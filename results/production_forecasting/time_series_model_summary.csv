@@ -1,0 +1,4 @@
+well_id,exp_smoothing_trend,exp_smoothing_damped,arima_order,train_months,test_months,forecast_months
+G21245 PN002,add,True,"(1, 1, 0)",30,6,12
+G21245 PS001,add,True,"(0, 1, 1)",30,6,12
+G21245 PS002,add,True,"(1, 1, 1)",30,6,12

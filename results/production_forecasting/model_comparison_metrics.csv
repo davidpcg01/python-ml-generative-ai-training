@@ -1,0 +1,9 @@
+phase,model,MAE,RMSE,MAPE_pct
+forecast,Arps hyperbolic,320.857,436.146,5.274
+forecast,Random forest (multivariate),989.097,1096.554,16.443
+forecast,Exponential smoothing,466.157,550.752,7.68
+forecast,ARIMA,917.121,1049.665,14.629
+test,Arps hyperbolic,142.595,179.728,1.998
+test,Random forest (multivariate),566.443,607.036,9.154
+test,Exponential smoothing,151.64,214.694,1.903
+test,ARIMA,369.231,410.588,5.827

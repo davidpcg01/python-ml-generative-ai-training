@@ -1,42 +1,79 @@
 # Production Forecasting Data Dictionary
 
+## Dataset Overview
+This training subset uses official monthly production records for `3` offshore Gulf of Mexico completions from `BSEE OGOR-A`.
+
+Selected completions:
+- `G21245 PN002`
+- `G21245 PS001`
+- `G21245 PS002`
+
+Shared context:
+- operator: `UNION OIL COMPANY OF CALIFORNIA`
+- area / block: `WR 678`
+- basin: `Gulf of Mexico`
+- reporting source: `BSEE OGOR-A` well-completion production
+
+Each completion includes `48` monthly records:
+- `30` months for model fitting
+- `6` months for internal test comparison
+- `12` months reserved as the forward forecast window
+
+This supports a cleaner classroom comparison between:
+- `Arps hyperbolic decline`
+- `RandomForestRegressor` trained separately for each completion with multivariate production-state features
+- `Exponential Smoothing`
+- `ARIMA`
+
 ## File: `well_monthly_production.csv`
 One row per `well_id` per month.
 
 ### Columns
-- `well_id`: unique well identifier
-- `pad`: operating pad or well group
-- `date`: month start date for the observation
-- `oil_rate_bopd`: average monthly oil rate in barrels of oil per day
-- `gas_rate_mscfd`: average monthly gas rate in thousand standard cubic feet per day
-- `water_cut_pct`: produced water percentage
-- `uptime_pct`: estimated percentage of the month that the well was online
-- `choke_size_64in`: choke size in sixty-fourths of an inch
-- `tubing_pressure_psi`: tubing pressure proxy
-- `casing_pressure_psi`: casing pressure proxy
-- `gor_scf_bbl`: gas-oil ratio proxy
-- `bhp_proxy_psi`: bottomhole pressure proxy used for demo purposes
-- `artificial_lift_type`: simplified artificial lift category
-- `reservoir_zone`: simplified reservoir zone label
-- `well_age_months`: producing age of the well in months
-- `lateral_length_ft`: lateral length in feet
-- `completion_stage_count`: stage count for the completion design
-- `event_flag`: indicates whether a reportable event occurred in that month
-- `event_type`: simplified event label if present
-- `forecast_target_next_month_bopd`: next month's oil rate for supervised learning examples
+- `well_id`: completion label used in the demo
+- `api_uwi`: offshore API / UWI identifier from the BSEE source
+- `operator`: operator name
+- `county`: broad location label used for the classroom subset
+- `reservoir`: field code used as the reservoir-style label in the training files
+- `state`: `OCS` for Outer Continental Shelf
+- `basin`: basin name
+- `area_block`: offshore area and block code from BSEE
+- `date`: month-start date for the production record
+- `oil_bbl`: monthly oil volume in `bbl/month`
+- `gas_mcf`: monthly gas volume in `mcf/month`
+- `water_bbl`: monthly water volume in `bbl/month`
+- `days_on_prod`: number of days the completion was reported on production in that month
+- `days_in_month`: calendar days in the month
 
-## File: `well_events.csv`
-One row per operational event.
+### Recommended derived columns in the notebook
+- `oil_rate_bbl_per_day`: `oil_bbl / days_on_prod`
+- `gas_rate_mcf_per_day`: `gas_mcf / days_on_prod`
+- `water_rate_bbl_per_day`: `water_bbl / days_on_prod`
+- `water_cut_pct`: `100 * water_bbl / (oil_bbl + water_bbl)` when total liquid is positive
+- `gor_mcf_per_bbl`: `gas_mcf / oil_bbl` when oil volume is positive
+
+## File: `well_master.csv`
+One row per demo completion.
 
 ### Columns
-- `well_id`: unique well identifier
-- `event_date`: date of the event
-- `event_type`: event classification such as `workover` or `pump_change`
-- `event_cost_usd`: simplified cost estimate for the event
-- `event_notes`: short text description for prompting or retrieval demos
+- `well_id`: completion label used in the notebook
+- `api_uwi`: offshore API / UWI identifier
+- `operator`: operator name
+- `county`: broad location label
+- `reservoir`: field code used as a compact teaching label
+- `state`: `OCS`
+- `basin`: basin name
+- `area_block`: offshore area and block code
+- `subset_start_date`: first month kept for the classroom subset
+- `subset_end_date`: last month kept for the classroom subset
+- `total_months`: total records per completion in the subset
+- `holdout_months`: number of months reserved for the forward forecast evaluation window
+- `training_months`: number of months retained as the pre-forecast modeling window
+- `source_dataset`: short provenance label
 
 ## Usage Notes
-- This dataset is synthetic and designed for training.
-- Some missing values are intentionally included to create realistic data quality issues.
-- The data should not be treated as a validated reservoir or production model.
-- The target column is intended for simple forecasting exercises rather than rigorous time-series benchmarking.
+- This is a `teaching subset`, not the full upstream BSEE database.
+- The notebook uses a `36-month` modeling window per completion, split into `30` training months and `6` internal test months.
+- The `12-month forecast` is evaluated against known future months in the selected classroom window.
+- The notebook compares `Arps`, a multivariate `RandomForestRegressor`, `Exponential Smoothing`, and `ARIMA`.
+- The notebook trains each model separately for each completion rather than pooling the completions together.
+- `oil_bbl`, `gas_mcf`, and `water_bbl` are monthly volumes. The plots in the notebook show daily rates derived from `days_on_prod`.

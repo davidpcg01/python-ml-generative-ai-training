@@ -197,18 +197,19 @@ Title:
 `Production Forecasting Copilot`
 
 Scenario bullets:
-- 18 wells across 3 pads
-- need a 6-month forecast
-- identify likely underperformers
-- flag possible drivers such as water cut and uptime
+- official BSEE offshore completion subset
+- 3 producing completions from the same operator and offshore block context
+- 30 months train, 6 months test, and 12 months forecast
+- compare `Arps hyperbolic decline` against multivariate `RandomForestRegressor`, `Exponential Smoothing`, and `ARIMA`
 - produce visuals and an engineering summary
 
 ## Slide 16: What ML Does In This Scenario
 Points:
-- uses historical well and operating data
-- learns patterns linked to future oil rate
-- supports well-level forecasting
-- can help rank wells by expected underperformance
+- uses historical monthly production data from the selected BSEE completions
+- fits `Arps hyperbolic decline` as the classical baseline
+- trains a separate `RandomForestRegressor` on multivariate production-state features for each completion
+- fits `Exponential Smoothing` and `ARIMA` as pure time-series baselines
+- compares all four approaches on a 6-month internal test and a 12-month forecast window
 
 ## Slide 17: What GenAI Does In This Scenario
 Points:
@@ -226,17 +227,15 @@ Title:
 Step-by-step flow:
 1. show the dataset
 2. frame the predictive question:
-   - what will next-month or next-period production look like?
-3. run the simple notebook model
-4. inspect forecast accuracy and sample well plots
-5. identify likely underperformers or surveillance candidates
-6. prompt the LLM with the scenario
-7. generate a first-pass analysis workflow
-8. improve plots and interpretation
-9. package as a reusable notebook or app concept
-
-Presenter note:
-- keep repeating the distinction between `forecasting model` and `GenAI copilot`
+   - how well can we forecast the next 12 months after a 30-month training history and 6-month test check?
+3. fit `Arps hyperbolic decline`
+4. train the multivariate `RandomForestRegressor`
+5. fit `Exponential Smoothing` and `ARIMA`
+6. inspect forecast accuracy and per-completion comparison plots
+7. prompt the LLM with the scenario
+8. generate a first-pass analysis workflow
+9. improve plots and interpretation
+10. package as a reusable notebook or app concept
 
 ## Slide 19: Practical Limits And Risks
 Key cautions:
@@ -262,9 +261,6 @@ Suggested papers:
   - [Joint Optimization of Well Locations, Types, Drilling Order, and Controls Given a Set of Potential Drilling Paths](https://doi.org/10.2118/193885-PA)
 - Carbon and infrastructure optimization:
   - [Embedding Existing Pipelines in Design of CO2 Transportation Networks for Optimal Sequestration Economics](https://doi.org/10.2118/214917-PA)
-
-Presenter note:
-- Keep this slide selective. The goal is to give participants a credible starting point, not an exhaustive literature review.
 
 ## Slide 21: Session 1 Wrap-Up
 Closing points:

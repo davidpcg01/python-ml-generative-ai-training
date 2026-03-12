@@ -1,0 +1,4 @@
+well_id,training_rows,train_fit_rows,features_used,targets_modeled,n_estimators,train_months,test_months,forecast_months
+G21245 PN002,24,24,20,3,400,30,6,12
+G21245 PS001,24,24,20,3,400,30,6,12
+G21245 PS002,24,24,20,3,400,30,6,12

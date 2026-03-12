@@ -1,0 +1,4 @@
+well_id,api_uwi,operator,county,reservoir,state,basin,area_block,subset_start_date,subset_end_date,total_months,holdout_months,training_months,source_dataset
+G21245 PN002,608124005400,UNION OIL COMPANY OF CALIFORNIA,Offshore Federal,WR678,OCS,Gulf of Mexico,WR  678,2021-01-01,2024-12-01,48,12,36,BSEE OGOR-A monthly well-completion production (official offshore regulator data)
+G21245 PS001,608124005700,UNION OIL COMPANY OF CALIFORNIA,Offshore Federal,WR678,OCS,Gulf of Mexico,WR  678,2021-01-01,2024-12-01,48,12,36,BSEE OGOR-A monthly well-completion production (official offshore regulator data)
+G21245 PS002,608124011400,UNION OIL COMPANY OF CALIFORNIA,Offshore Federal,WR678,OCS,Gulf of Mexico,WR  678,2021-01-01,2024-12-01,48,12,36,BSEE OGOR-A monthly well-completion production (official offshore regulator data)

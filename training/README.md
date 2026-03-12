@@ -86,7 +86,8 @@ The primary running example is a `production forecasting copilot`.
 
 Why this works well:
 - It is familiar to petroleum engineers.
-- It shows where ML is the numerical engine.
+- It now uses a compact official BSEE offshore completion subset with regulator-backed monthly production rather than a synthetic field example.
+- It shows where `Arps hyperbolic decline`, a multivariate `RandomForestRegressor`, `Exponential Smoothing`, and `ARIMA` act as the numerical engines.
 - It also shows how GenAI can help frame the problem, write analysis code, inspect outputs, generate visuals, explain results, and package the workflow into something reusable.
 
 This storyline should be referenced in both sessions:
@@ -110,18 +111,20 @@ Recommended live delivery stack:
 
 ## Materials In This Package
 - `training/session-1-slides.md`
-- `training/session-1-facilitator-notes.md`
 - `training/session-2-slides.md`
-- `training/session-2-facilitator-notes.md`
 - `training/hands-on/notebook-ml-basics.ipynb`
+- `training/hands-on/production-forecasting-demo.ipynb`
 - `training/hands-on/notebook-genai-rag.ipynb`
 - `training/hands-on/production-forecasting-demo.md`
+- `training/hands-on/production-forecasting-colab-guide.md`
+- `training/hands-on/production-forecasting-local-setup.md`
+- `training/hands-on/cursor-setup-and-ai-workflow.md`
+- `training/hands-on/cursor-prompts/`
 - `training/hands-on/notebook-optimization-waterwise.ipynb`
 - `training/hands-on/optimization-waterwise-demo.py`
 - `training/hands-on/optimization-waterwise-demo.md`
 - `training/sample-data/production_forecasting/`
 - `training/sample-data/optimization_waterwise/`
-- `training/participant-workbook.md`
 - `training/reading-list.md`
 
 ## Suggested Delivery Style
@@ -136,13 +139,14 @@ Recommended live delivery stack:
 
 ## Practical Setup
 Minimum setup for the facilitator:
-- Python environment with `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, and `pulp`
+- Python environment with `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `scipy`, `statsmodels`, and `pulp`
 - Internet access for live LLM demos, if allowed
 - Backup screenshots in case live prompting is unreliable
 
 Minimum setup for participants:
 - No coding required for core participation
 - Optional access to Colab or Jupyter for self-study
+- Optional access to `Cursor` free version for AI-assisted coding exercises
 - Optional access to an LLM interface for prompting exercises
 
 ## Success Criteria
