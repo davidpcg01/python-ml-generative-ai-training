@@ -41,13 +41,13 @@ The business question is:
 - It creates a clean bridge into AI-assisted code generation, interpretation, and dashboarding.
 
 ## Files Used In This Demo
-- `training/hands-on/production-forecasting-demo.ipynb`
-- `training/hands-on/production-forecasting-colab-guide.md`
-- `training/hands-on/production-forecasting-local-setup.md`
-- `training/sample-data/production_forecasting/well_monthly_production.csv`
-- `training/sample-data/production_forecasting/well_master.csv`
-- `training/sample-data/production_forecasting/data_dictionary.md`
-- `training/sample-data/production_forecasting/source_notes.md`
+- `training/demos/production-forecasting/production-forecasting-demo.ipynb`
+- `training/setup/colab/production-forecasting-colab-guide.md`
+- `training/setup/local/production-forecasting-local-setup.md`
+- `training/data/production_forecasting/well_monthly_production.csv`
+- `training/data/production_forecasting/well_master.csv`
+- `training/data/production_forecasting/data_dictionary.md`
+- `training/data/production_forecasting/source_notes.md`
 
 ## Suggested Workflow
 1. Read the problem statement in petroleum-engineering terms.

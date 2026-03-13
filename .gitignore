@@ -4,5 +4,5 @@ training/*speaker-notes*.md
 training/**/*speaker-notes*.md
 training/*presenter-notes*.md
 training/**/*presenter-notes*.md
-training/session-1-slides.md
-training/session-2-slides.md
+training/sessions/session-1/session-1-slides.md
+training/sessions/session-2/session-2-slides.md

@@ -4,11 +4,11 @@ This guide explains how to run the BSEE offshore-completion production-forecasti
 
 ## Files You Need
 Upload these files from the training package:
-- `training/hands-on/production-forecasting-demo.ipynb`
-- `training/sample-data/production_forecasting/well_monthly_production.csv`
-- `training/sample-data/production_forecasting/well_master.csv`
-- `training/sample-data/production_forecasting/data_dictionary.md`
-- `training/sample-data/production_forecasting/source_notes.md`
+- `training/demos/production-forecasting/production-forecasting-demo.ipynb`
+- `training/data/production_forecasting/well_monthly_production.csv`
+- `training/data/production_forecasting/well_master.csv`
+- `training/data/production_forecasting/data_dictionary.md`
+- `training/data/production_forecasting/source_notes.md`
 
 ## Step 1: Open Google Colab
 1. Go to [https://colab.research.google.com](https://colab.research.google.com).
@@ -84,7 +84,7 @@ You should see:
 ## Step 7: Download The Results
 The notebook writes output files to:
 
-`results/production_forecasting/`
+`training/demos/production-forecasting/results/production_forecasting/`
 
 Expected files:
 - `model_comparison_metrics.csv`

@@ -7,9 +7,9 @@ import pulp
 def locate_data_dir() -> Path:
     here = Path(__file__).resolve().parent
     candidate_dirs = [
-        here.parent / "sample-data" / "optimization_waterwise",
-        Path.cwd() / "training" / "sample-data" / "optimization_waterwise",
-        Path.cwd() / "sample-data" / "optimization_waterwise",
+        here.parent.parent / "data" / "optimization_waterwise",
+        Path.cwd() / "training" / "data" / "optimization_waterwise",
+        Path.cwd() / "data" / "optimization_waterwise",
     ]
     for path in candidate_dirs:
         if path.exists():

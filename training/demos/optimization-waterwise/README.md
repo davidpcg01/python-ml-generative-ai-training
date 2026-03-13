@@ -40,12 +40,13 @@ What is the lowest-cost feasible water-allocation plan that:
 - encourages produced-water reuse
 
 ## Files
-- `training/sample-data/optimization_waterwise/water_sources.csv`
-- `training/sample-data/optimization_waterwise/demand_pads.csv`
-- `training/sample-data/optimization_waterwise/transport_links.csv`
-- `training/sample-data/optimization_waterwise/scenario_parameters.csv`
-- `training/hands-on/optimization-waterwise-demo.py`
-- `training/hands-on/notebook-optimization-waterwise.ipynb`
+- `training/data/optimization_waterwise/water_sources.csv`
+- `training/data/optimization_waterwise/demand_pads.csv`
+- `training/data/optimization_waterwise/transport_links.csv`
+- `training/data/optimization_waterwise/scenario_parameters.csv`
+- `training/demos/optimization-waterwise/optimization-waterwise-demo.py`
+- `training/demos/optimization-waterwise/notebook-optimization-waterwise.ipynb`
+- `training/demos/optimization-waterwise/optimization-waterwise-demo.ipynb`
 
 ## Learning Objectives
 After working through this exercise, you should understand:
@@ -80,14 +81,14 @@ Frame the model like this:
 From the repo root:
 
 ```bash
-python3 "training/hands-on/optimization-waterwise-demo.py"
+python3 "training/demos/optimization-waterwise/optimization-waterwise-demo.py"
 ```
 
 The script:
 - solves the linear program with `PuLP`
 - prints the optimal cost and allocation summaries
 - writes result CSVs to:
-  - `training/hands-on/results/optimization_waterwise/`
+  - `training/demos/optimization-waterwise/results/optimization_waterwise/`
 
 ## Discussion Questions
 - Why is this a better fit for optimization than for ML?

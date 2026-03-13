@@ -4,11 +4,11 @@ This guide shows how to run the BSEE offshore-completion production-forecasting 
 
 ## Files You Need
 Use these files from the training package:
-- `training/hands-on/production-forecasting-demo.ipynb`
-- `training/sample-data/production_forecasting/well_monthly_production.csv`
-- `training/sample-data/production_forecasting/well_master.csv`
-- `training/sample-data/production_forecasting/data_dictionary.md`
-- `training/sample-data/production_forecasting/source_notes.md`
+- `training/demos/production-forecasting/production-forecasting-demo.ipynb`
+- `training/data/production_forecasting/well_monthly_production.csv`
+- `training/data/production_forecasting/well_master.csv`
+- `training/data/production_forecasting/data_dictionary.md`
+- `training/data/production_forecasting/source_notes.md`
 
 ## Recommended Local Stack
 - `Python 3.10` or newer
@@ -31,7 +31,7 @@ If you already have this repo on your machine:
 2. Create and activate a virtual environment.
 3. Install the required packages.
 4. Launch Jupyter.
-5. Open `training/hands-on/production-forecasting-demo.ipynb`.
+5. Open `training/demos/production-forecasting/production-forecasting-demo.ipynb`.
 
 ## macOS Setup
 ### Step 1: Check Python
@@ -61,7 +61,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn scipy statsmodels jupyt
 If you prefer the repo requirements:
 
 ```bash
-pip install -r training/requirements.txt
+pip install -r training/setup/requirements.txt
 ```
 
 ### Step 4: Launch Jupyter
@@ -79,7 +79,7 @@ jupyter lab
 
 Then open:
 
-`training/hands-on/production-forecasting-demo.ipynb`
+`training/demos/production-forecasting/production-forecasting-demo.ipynb`
 
 ## Windows Setup
 ### Step 1: Install Python
@@ -124,14 +124,14 @@ jupyter notebook
 
 Then open:
 
-`training/hands-on/production-forecasting-demo.ipynb`
+`training/demos/production-forecasting/production-forecasting-demo.ipynb`
 
 ## Expected Project Layout
 If you run the notebook from the repo root, the notebook should automatically find:
 
-- `training/sample-data/production_forecasting/well_monthly_production.csv`
-- `training/sample-data/production_forecasting/well_master.csv`
-- `training/sample-data/production_forecasting/data_dictionary.md`
+- `training/data/production_forecasting/well_monthly_production.csv`
+- `training/data/production_forecasting/well_master.csv`
+- `training/data/production_forecasting/data_dictionary.md`
 
 ## Running The Notebook
 Run cells in order:
@@ -148,7 +148,7 @@ Run cells in order:
 ## Output Files
 Results are written to:
 
-`results/production_forecasting/`
+`training/demos/production-forecasting/results/production_forecasting/`
 
 Expected exports:
 - `model_comparison_metrics.csv`
@@ -172,7 +172,7 @@ pip install scipy
 
 ### Notebook cannot find the sample data
 - Make sure you launched Jupyter from the repo root.
-- Confirm the `training/sample-data/production_forecasting/` folder exists.
+- Confirm the `training/data/production_forecasting/` folder exists.
 - Check that the filenames are unchanged.
 
 ### Matplotlib plots not showing

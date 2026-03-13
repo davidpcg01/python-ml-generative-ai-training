@@ -94,33 +94,29 @@ Why this matters:
 - it provides a practical bridge into larger optimization products such as `WaterWise`, `SandWise`, `FracGenie`, and `Sequestrix`
 
 ## Materials In This Package
-- `training/session-1-slides.md`
-- `training/session-2-slides.md`
-- `training/hands-on/notebook-ml-basics.ipynb`
-- `training/hands-on/production-forecasting-demo.ipynb`
-- `training/hands-on/notebook-genai-rag.ipynb`
-- `training/hands-on/production-forecasting-demo.md`
-- `training/hands-on/production-forecasting-colab-guide.md`
-- `training/hands-on/production-forecasting-local-setup.md`
-- `training/hands-on/notebook-optimization-waterwise.ipynb`
-- `training/hands-on/optimization-waterwise-demo.py`
-- `training/hands-on/optimization-waterwise-demo.md`
-- `training/sample-data/production_forecasting/`
-- `training/sample-data/optimization_waterwise/`
-- `training/reading-list.md`
+- `training/README.md`
+- `training/sessions/session-1/`
+- `training/sessions/session-2/`
+- `training/demos/production-forecasting/`
+- `training/demos/optimization-waterwise/`
+- `training/setup/`
+- `training/data/`
+- `training/resources/reading-list.md`
 
 ## How To Use This Package
-- Read the session slide files for the conceptual overview.
-- Use the notebooks and setup guides for hands-on practice.
-- Review the sample-data folders and data dictionaries before running the exercises.
+- Start with `training/README.md` for the student-friendly course map.
+- Read the session slide files in `training/sessions/` for the conceptual overview.
+- Use the demo folders in `training/demos/` for the hands-on walkthroughs, notebooks, scripts, and results.
+- Use the setup guides in `training/setup/` for local or Colab execution.
+- Review the datasets and data dictionaries in `training/data/` before running the exercises.
 - Use the standalone `Cursor` exercise repo if you want the AI-assisted coding workflow: `https://github.com/davidpcg01/hands-on-ml-cursor`
-- Use the reading list for optional follow-up study.
+- Use `training/resources/reading-list.md` for optional follow-up study.
 
 ## Practical Setup
 - No coding is required to read the materials.
 - Optional access to `Colab` or `Jupyter` is helpful for the notebook exercises.
 - Optional access to the free version of `Cursor` is helpful if you also want to complete the separate `hands-on-ml-cursor` exercise.
-- If you want to run everything locally, install the Python packages listed in `training/requirements.txt`.
+- If you want to run everything locally, install the Python packages listed in `training/setup/requirements.txt`.
 
 ## What You Should Be Able To Do
 After working through the package, you should be able to:
