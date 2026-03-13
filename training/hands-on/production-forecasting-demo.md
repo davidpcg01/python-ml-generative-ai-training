@@ -44,8 +44,6 @@ The business question is:
 - `training/hands-on/production-forecasting-demo.ipynb`
 - `training/hands-on/production-forecasting-colab-guide.md`
 - `training/hands-on/production-forecasting-local-setup.md`
-- `training/hands-on/cursor-setup-and-ai-workflow.md`
-- `training/hands-on/cursor-prompts/`
 - `training/sample-data/production_forecasting/well_monthly_production.csv`
 - `training/sample-data/production_forecasting/well_master.csv`
 - `training/sample-data/production_forecasting/data_dictionary.md`
@@ -101,9 +99,9 @@ After the notebook run, use `Cursor` to explore how AI can help:
 - build a static HTML dashboard from the CSV outputs
 - analyze the forecast results and draft engineering recommendations
 
-Use the prompt files in:
+The optional standalone `Cursor` exercise repo for this workflow is:
 
-`training/hands-on/cursor-prompts/`
+`https://github.com/davidpcg01/hands-on-ml-cursor`
 
 ## Practical Notes
 - This is a compact learning subset, not a full field database.

@@ -102,8 +102,6 @@ Why this matters:
 - `training/hands-on/production-forecasting-demo.md`
 - `training/hands-on/production-forecasting-colab-guide.md`
 - `training/hands-on/production-forecasting-local-setup.md`
-- `training/hands-on/cursor-setup-and-ai-workflow.md`
-- `training/hands-on/cursor-prompts/`
 - `training/hands-on/notebook-optimization-waterwise.ipynb`
 - `training/hands-on/optimization-waterwise-demo.py`
 - `training/hands-on/optimization-waterwise-demo.md`
@@ -115,13 +113,13 @@ Why this matters:
 - Read the session slide files for the conceptual overview.
 - Use the notebooks and setup guides for hands-on practice.
 - Review the sample-data folders and data dictionaries before running the exercises.
-- Use the `Cursor` guide and prompt library if you want to try AI-assisted coding and analysis workflows.
+- Use the standalone `Cursor` exercise repo if you want the AI-assisted coding workflow: `https://github.com/davidpcg01/hands-on-ml-cursor`
 - Use the reading list for optional follow-up study.
 
 ## Practical Setup
 - No coding is required to read the materials.
 - Optional access to `Colab` or `Jupyter` is helpful for the notebook exercises.
-- Optional access to the free version of `Cursor` is helpful for the AI-assisted coding exercises.
+- Optional access to the free version of `Cursor` is helpful if you also want to complete the separate `hands-on-ml-cursor` exercise.
 - If you want to run everything locally, install the Python packages listed in `training/requirements.txt`.
 
 ## What You Should Be Able To Do
