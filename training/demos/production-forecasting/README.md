@@ -42,6 +42,7 @@ The business question is:
 
 ## Files Used In This Demo
 - `training/demos/production-forecasting/production-forecasting-demo.ipynb`
+- `training/demos/production-forecasting/production-forecasting-agent-sample.md`
 - `training/setup/colab/production-forecasting-colab-guide.md`
 - `training/setup/local/production-forecasting-local-setup.md`
 - `training/data/production_forecasting/well_monthly_production.csv`
@@ -98,6 +99,9 @@ After the notebook run, use `Cursor` to explore how AI can help:
 - generate a standalone Python script for Arps forecasting
 - build a static HTML dashboard from the CSV outputs
 - analyze the forecast results and draft engineering recommendations
+
+For a student-facing walkthrough of a tool-calling agent tailored to this exact dataset and `Arps` workflow, see:
+- `training/demos/production-forecasting/production-forecasting-agent-sample.md`
 
 The optional standalone `Cursor` exercise repo for this workflow is:
 
